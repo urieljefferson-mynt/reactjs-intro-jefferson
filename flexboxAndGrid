@@ -1,0 +1,46 @@
+<html>
+<style>
+.item1 { grid-area: header;   border: 0.1px solid white;}
+
+.item3 { grid-area: main_one;   border: 0.1px solid white;
+}
+.item6 { grid-area: main_two;   border: 0.1px solid white;
+}
+.item7 { grid-area: main_three;   border: 0.1px solid white;
+}
+.item4 { grid-area: right;   border: 0.1px solid white;
+}
+.item5 { grid-area: footer;   border: 0.1px solid white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'main_one main_one main_two main_two main_three main_three'
+    'right right right right right right'
+    'footer footer footer footer footer footer';
+  grid-template-columns: auto;
+  grid-template-rows: 600px 600px 600px 300px;
+  background-color: #2196F3;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 10px 0;
+  font-size: 30px;
+}
+</style>
+
+
+
+<div class="grid-container">
+    <div class="item1">Header</div>
+    <div class="item3">Main_one</div>  
+      <div class="item6">Main_two</div>  
+    <div class="item7">Main_three</div>  
+  
+    <div class="item4">Right</div>
+    <div class="item5">Footer</div>
+</div>
